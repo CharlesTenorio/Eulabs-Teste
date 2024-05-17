@@ -58,3 +58,6 @@ docker-compose down
 https://www.postman.com/downloads/
 apos baixa e instalar postaman abra e va na opção import escolha o arquivo
  ApiProduct.json na pasta docs/Insomnia so executar os endpoint 
+ ### Documentação
+ na pasta docs-postmam tem uma arquivo:
+ Eulabs_prodcts_api.postman_collection.json de um collection do postaman

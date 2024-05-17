@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "f88e9ee6-367f-49eb-baf0-6b9849bfa34b",
+		"name": "Eulabs_prodcts_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3865501"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/prd/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"name\": \"AAA HOPE\",\n\t\"quantity\": 300, \n\t\"price\": 5.000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prd/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prd",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/prd/getbyid?id=e9f27302-e3d7-4179-a960-ca36ccda3992",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					},
+					{
+						"key": "id",
+						"value": "11252470-9bf9-4927-8c6c-2a07a1776832"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prd/getbyid?id=e9f27302-e3d7-4179-a960-ca36ccda3992",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prd",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "e9f27302-e3d7-4179-a960-ca36ccda3992"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/prd/update?id=e9f27302-e3d7-4179-a960-ca36ccda3992",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"id\": \"11252470-9bf9-4927-8c6c-2a07a1776832\",\n\t\"name\": \"AGORA TROCANDO novamente NOME PARA ESSE AI\",\n\t\"quantity\": 10, \n\t\"price\": 5.000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prd/update?id=e9f27302-e3d7-4179-a960-ca36ccda3992",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prd",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "e9f27302-e3d7-4179-a960-ca36ccda3992"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/prd/delete?id=1d79bed4-579d-48c8-80b8-5aa547fdf138",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					},
+					{
+						"key": "id",
+						"value": "11252470-9bf9-4927-8c6c-2a07a1776832"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prd/delete?id=1d79bed4-579d-48c8-80b8-5aa547fdf138",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prd",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1d79bed4-579d-48c8-80b8-5aa547fdf138"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/prd/all?=",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "insomnia/8.5.1"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/prd/all?=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"prd",
+						"all"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
